@@ -4,6 +4,5 @@
  * without using any pre build in function
  */
 
-function minimum(array) {
-  return;
-}
+
+Math.min(1,10,5,-3,100)
