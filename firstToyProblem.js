@@ -5,5 +5,13 @@
  */
 
 function minimum(array) {
-  return;
+  let min = array[0];
+  for(var i in array){
+      if(array[i] < min){
+        min = array[i]
+      }
+  }
+  return min;
 }
+
+console.log(minimum([1,10,5,-3,100]));
