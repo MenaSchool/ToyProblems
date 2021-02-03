@@ -5,4 +5,7 @@
  */
 
 
-Math.min(1,10,5,-3,100)
+function minimum(array) {
+  return Math.min(...array);
+}
+console.log(minimum([1,10,5,-3,100]));
