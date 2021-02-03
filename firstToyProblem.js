@@ -10,6 +10,7 @@ function minimum(array) {
 
 var arr= [1,10,5,-3,100];
 var max=[0];
+var min=[0];
 for(var i =0 ; i<arr.length; i++){
 
   if (arr[i]>=max){
@@ -18,5 +19,16 @@ for(var i =0 ; i<arr.length; i++){
   }
 
 }
-console.log(max);
-console.log("hello");
+
+for(var i =0 ; i<arr.length; i++){
+
+  if (arr[i]<=min){
+
+    min=arr[i];
+  }
+
+}
+
+console.log("hello mena ");
+console.log('this is a minimum value: ' ,  min);
+console.log('this is a max value: ', max);
