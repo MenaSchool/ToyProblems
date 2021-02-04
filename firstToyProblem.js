@@ -5,5 +5,14 @@
  */
 
 function minimum(array) {
-  return;
+  var min= array[0];
+  for (let i=1; i<array.length ; i++){
+    if( array [i] <min){
+      min =array[i];
+    }
+  }
+  return min;
 }
+
+let list =[1,10,5,-3,100];
+console.log(minimum(list));
