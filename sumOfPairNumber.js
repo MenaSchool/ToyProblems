@@ -9,24 +9,24 @@ function sumPair(array) {
 
     let total = 0
 
-    if(Array.isArray(array)){  // for array
-        for(i of array){
-            if(i % 2 == 0){
-                total = total + i
+        if(Array.isArray(array)){  // for array
+            for(i of array){
+                if(i % 2 == 0){
+                    total = total + i
+                }
             }
-        }
-        return total
-    }else if(typeof array == "object"){ // can replace it by if(true) it works too     for object
-        for(let key in array){
-            if(array[key] % 2 == 0){
-                total = total + array[key]
-            };
-        }
-        return total
-    }  }
-    function sumPair(array) {
+            return total
+        }else if(typeof array == "object"){ // can replace it by if(true) it works too     for object
+            for(let key in array){
+                if(array[key] % 2 == 0){
+                    total = total + array[key]
+                        };
+                    }
+            return total
+                }  
+}
 
-    }
+    
     console.log(sumPair([1,6,100,346,761,249]));
     console.log(sumPair({
            a:2,
