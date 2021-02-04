@@ -6,9 +6,24 @@
  * sumPair([2,4,9,73])=>6
  */
 function sumPair(array) {
-  //your code goes here
+  if (Array.isArray(array)) {
+    let sumOfPairNumbers = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 == 0) {
+        sumOfPairNumbers += array[i];
+      }
+    }
+    return sumOfPairNumbers;
+  } else {
+    keys = [];
+    for(let x in array) {
+      if(array[x] % 2 == 0) {
+        keys.push(x);
+      }
+    }
+    console.log(keys, " have pair values");
+  }
 }
-
 /**
  * bonus points
  *
