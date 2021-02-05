@@ -24,6 +24,7 @@ function sumPair(array) {
     console.log(keys, " have pair values");
   }
 }
+
 /**
  * bonus points
  *

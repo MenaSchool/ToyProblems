@@ -13,5 +13,3 @@ function minimum(array) {
   }
   return min;
 }
-const array = [1,10,5,-3,100];
-console.log(minimum(array));
