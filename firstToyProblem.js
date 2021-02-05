@@ -5,8 +5,7 @@
  */
 
 var list = [1, 10, -3, 100];
-
-minimum(list);
+console.log(minimum(list));
 function minimum(array) {
 
   var min = list[0];
@@ -17,3 +16,5 @@ function minimum(array) {
   }
   return min;
 }
+
+

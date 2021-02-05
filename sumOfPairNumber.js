@@ -5,8 +5,23 @@
  *
  * sumPair([2,4,9,73])=>6
  */
+console.log(sumPair([1,6,100,346,761,249]));
+
+console.log(pair({ a: 2, b: 5, c: 8 }));
+
+
+
 function sumPair(array) {
-  //your code goes here
+  var sum = 0;
+  for (var i = 0; i < array.length; i++){
+    if (array[i] % 2 == 0) {
+      sum += array[i];
+    }
+
+  }
+  return sum;
+
+
 }
 
 /**
@@ -23,7 +38,22 @@ function sumPair(array) {
  *     b:5,
  *     c:8
  * }
- *
+ *   
+ *   
+ * 
  * return => "a & c have pair values"
  *
  */
+function pair(array) {
+  var Keys = "";
+  for (var key in array) {
+   
+    if (array[key] % 2 == 0) {
+      Keys+= array[key]+","
+    }
+
+  }
+  return "The " +Keys +"have pair values"
+    
+    
+}
