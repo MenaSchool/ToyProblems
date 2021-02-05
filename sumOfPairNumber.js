@@ -7,7 +7,33 @@
  */
 function sumPair(array) {
   //your code goes here
+  if (Array.isArray(array)) {
+    let sum = 0;
+    for (const num of array) {
+      if (num % 2 === 0) {
+        sum += num;
+      }
+    }
+    return sum;
+  } else {
+    let res = [];
+    for (const key in array) {
+      if (array[key] % 2 === 0) {
+        res.push(key);
+      }
+    }
+    return res.join(' & ') + ' have pair values';
+  }
 }
+
+console.log(sumPair([2,4,9,73]));
+console.log(sumPair([1,6,100,346,761,249]));
+obj = {
+  a: 2,
+  b: 5,
+  c: 8,
+};
+console.log(sumPair(obj));
 
 /**
  * bonus points
