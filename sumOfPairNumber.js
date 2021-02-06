@@ -30,22 +30,23 @@ console.log(sumPair({
          c:8,
          d:10
 }));
-  /**
-   * bonus points
-   *
-   * same function works for both arrays and objects
-   *
-   * if the input is an array return the sum of the pair numbers
-   *
-   * if it is an object like this:
-   *
-   * obj={
-   *     a:2,
-   *     b:5,
-   *     c:8
-   * }
-   *
-   * return => "a & c have pair values"
-   *
-   */
 
+
+/*
+ * bonus points
+ *
+ * same function works for both arrays and objects
+ *
+ * if the input is an array return the sum of the pair numbers
+ *
+ * if it is an object like this:
+ *
+ * obj={
+ *     a:2,
+ *     b:5,
+ *     c:8
+ * }
+ *
+ * return => "a & c have pair values"
+ *
+ */
