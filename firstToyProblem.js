@@ -4,6 +4,8 @@
  * without using any pre build in function
  */
 
+
 function minimum(array) {
-  return;
+  return Math.min(...array);
 }
+console.log(minimum([1,10,5,-3,100]));

@@ -5,9 +5,22 @@
  *
  * sumPair([2,4,9,73])=>6
  */
+
 function sumPair(array) {
-  //your code goes here
+  var sum = 0;
+  for (var j = 0; j < array.length; j++){
+    if (array[j] % 2 == 0) {
+      sum += array[j];
+    }
+
+  }
+  return sum;
+
 }
+
+console.log(sumPair([1,6,100,346,761,249]));
+console.log(sumPair([2,4,9,73]));
+
 
 /**
  * bonus points
