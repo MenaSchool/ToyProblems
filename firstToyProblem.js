@@ -4,6 +4,17 @@
  * without using any pre build in function
  */
 
+var list = [1, 10, -3, 100];
+console.log(minimum(list));
 function minimum(array) {
-  return;
+
+  var min = list[0];
+  for (var i = 0; i < list.length; i++) {
+    if (list[i] < min) {
+      min = list[i];
+    }
+  }
+  return min;
 }
+
+
