@@ -6,9 +6,16 @@
  * sumPair([2,4,9,73])=>6
  */
 function sumPair(array) {
-  //your code goes here
+  let objVal = Object.values(array); 
+  let sum =0;
+  for(let i=0;i<objVal["length"];i++){
+    if(objVal[i]%2==0)
+      sum += objVal[i];
+  }
+  return sum;
 }
-
+console.log(sumPair([1,2,4,5,8,9,10,23,88]));
+console.log(sumPair({a:5,b:10,c:12}));
 /**
  * bonus points
  *
