@@ -7,6 +7,42 @@
  */
 function sumPair(array) {
   //your code goes here
+   if(Array.isArray(array)){
+       let sum=0;
+       array.map( e => {
+      if(e %2 ==0){
+        sum+= e;
+       }
+  
+      })
+      console.log(sum);
+   }else{
+        let pairArr=[];
+        let res="";
+        for(const prop in array){
+          if(array[prop] %2 ==0){
+             pairArr.push(prop);
+          }
+        }
+         
+        if(pairArr.length === 1){
+          res=`${pairArr[0]} has pair values`
+        }else{
+        pairArr.map( (e,i) =>{
+          if(i != pairArr.length-1){
+            res += `${e} & `;
+          }else{
+            res+=`${e} have pair values`;
+          }
+        })
+        }
+        console.log(res);
+
+   }
+
+
+  
+ 
 }
 
 /**
