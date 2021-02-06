@@ -6,8 +6,21 @@
  * sumPair([2,4,9,73])=>6
  */
 function sumPair(array) {
-  //your code goes here
+  let sum = 0;
+    for(let i = 1 ; i < array.length ;i++)
+    {
+         if(array[i] % 2 == 0)
+         {
+           sum += array[i]; 
+         }
+    }
+  return sum;
 }
+
+
+let sumOfPair = sumPair([2,4,9,73]);
+
+console.log(sumOfPair);
 
 /**
  * bonus points
