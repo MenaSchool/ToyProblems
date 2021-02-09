@@ -12,4 +12,5 @@ function minimum(array) {
       minnum = number[i];
     }
   }
-  return minnum;
+  return minnum
+}
